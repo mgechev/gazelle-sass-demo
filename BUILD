@@ -6,6 +6,7 @@ gazelle_binary(
     visibility = ["//visibility:public"],
 )
 
+# gazelle:prefix github.com/mgechev/sass-example
 gazelle(
     name = "gazelle",
     gazelle = "gazelle_sass",
