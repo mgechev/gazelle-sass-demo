@@ -2,13 +2,7 @@ load("@bazel_gazelle//:def.bzl", "DEFAULT_LANGUAGES", "gazelle_binary", "gazelle
 
 gazelle_binary(
     name = "gazelle_sass",
-    languages = DEFAULT_LANGUAGES + [
-        "@io_bazel_rules_sass//gazelle:go_default_library",
-    ],
-    msan = "off",
-    pure = "off",
-    race = "off",
-    static = "off",
+    languages = ["@io_bazel_rules_sass//gazelle:go_default_library"],
     visibility = ["//visibility:public"],
 )
 
